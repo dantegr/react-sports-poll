@@ -1,10 +1,13 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import '../styles/App.css';
-import Events from './Events';
+
 
 const App = () => {
 
   const [platformValue, plaftormInputProps] = useRadioButtons("platform");
+  
+  const [data, setData] = useState({ events: [] });
 
   function useRadioButtons(name) {
     const [value, setState] = useState(null);
@@ -21,6 +24,20 @@ const App = () => {
   
     return [value, inputProps];
   }
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'https://s3-eu-west-1.amazonaws.com/test-assignment/test-assignment.json',
+      );
+    
+      setData({events: result.data});
+       
+      };
+      fetchData();
+    }, []);
+
+
   return (
     <div className="App">
       <h1>Sports Poll</h1>
@@ -54,7 +71,9 @@ const App = () => {
 
       <button>Next Event</button>
 
-      <Events />
+      <ul>
+            {data.events.map(event =>( <li key={event.id}>{event.name}</li>))}
+      </ul>
 
 
     </div>
