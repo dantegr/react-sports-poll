@@ -4,6 +4,10 @@
     margin:0;
     padding: 1.6rem 0;
     width:100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
   
   .header__title {
@@ -12,7 +16,7 @@
   }
   
   .header__subtitle {
-    color: #78c88a;
+    color: #979aaa;
     font-size:  1.6rem;
     font-weight: 500;
     margin: 0;

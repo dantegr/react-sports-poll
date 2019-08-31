@@ -20,6 +20,7 @@ const Poll = ({sport , name , awayName , homeName, country, group, state}) => {
 
     }
     return(
+        
         <div className="poll">
             <div className="poll-header">
             <h1 className="poll-header__title">{sport}</h1>
@@ -43,9 +44,13 @@ const Poll = ({sport , name , awayName , homeName, country, group, state}) => {
                 </div>
             </form>
             </div>
-            <button onClick={() => window.location.reload(false)}>Next Event</button>
+            
+            <div class="button_cont" align="center">
+                <button className="poll-button" onClick={() => window.location.reload(false)}>Next Event</button>
+            </div>
     
         </div>
+         
     );
 
 }

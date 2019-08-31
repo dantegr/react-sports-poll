@@ -6,6 +6,9 @@
     margin-left: 2.4rem;
     width: 700px;
     max-width: 700px;
+    position: fixed;
+    top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .poll-header {
@@ -21,7 +24,7 @@
   }
   .poll-header__flag {
     margin: 0;
-    transform:  scale(4) translateY(-0.45rem);
+    transform:  scale(3) translateY(-0.4rem);
     transform-origin: right top;
   }
   
@@ -36,14 +39,7 @@
     word-break: break-all; 
   }
 
-  $bg: #332f35;
-  $fg: lighten($bg,20%);
-  $borderWidth: 3px;
-  
-  body {
-    background: $bg;
-    font-family: roboto;
-  }
+
   
   input[type=radio] {
     position: absolute;
@@ -52,7 +48,7 @@
   }
   
   label {
-    color: lighten($bg,40%);
+    color: lighten(#332f35,40%);
     display: inline-block;
     cursor: pointer;
     font-weight: bold;
@@ -60,19 +56,41 @@
   }
   
   input[type=radio]:checked + label{
-    color: lighten($bg,60%);
-    background: $fg;
+    color: lighten(#332f35,60%);
+    background: lighten(#332f35,20%);
   }
   
   label + input[type=radio] + label {
-    border-left: solid $borderWidth $fg;
+    border-left: solid 3px lighten(#332f35,20%);
   }
   .radio-group {
-    border: solid $borderWidth $fg;
+    border: solid 3px lighten(#332f35,20%);
     display: inline-block;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
   }
+
+  .poll-button {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 1.6rem;
+    }
+
+  .poll-button:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: white;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    }
   
-  @import url('https://fonts.googleapis.com/css?family=Roboto');

@@ -6,6 +6,7 @@ html {
     font-family: Helvetica, Arial, sans-serif;
     font-size:  1.6rem;
     background-color: #333745;
+    font-family: roboto;
   }
   
   button {
@@ -15,3 +16,7 @@ html {
   button:disabled {
     cursor: default;
   }
+
+  a {
+    text-decoration: none !important;
+}
