@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import '../styles/App.css';
+import React, { useState} from 'react';
 import Poll from './Poll';
+import Header from './Header';
+import Footer from './Footer';
+
 
 
 const App = () => {
 
-  //const [platformValue, plaftormInputProps] = useRadioButtons("platform");
   
   const [data, setData] = useState({ events: [{
     "awayName": "Panthrakikos Komotini",
@@ -225,52 +225,25 @@ const App = () => {
     "state": "FINISHED"
   }] });
 
-
-  // function useRadioButtons(name) {
-  //   const [value, setState] = useState(null);
-  
-  //   const handleChange = e => {
-  //     setState(e.target.value);
-  //   };
-  
-  //   const inputProps = {
-  //     name,
-  //     type: "radio",
-  //     onChange: handleChange
-  //   };
-  
-  //   return [value, inputProps];
-  // }
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const result = await axios(
-  //       'https://s3-eu-west-1.amazonaws.com/test-assignment/test-assignment.json',
-  //     );
-    
-  //     setData({events: result.data});
-       
-  //     };
-  //     fetchData();
-  //   }, []);
-
-  
-  //   const randomEvent = 
     
   const event = data.events[Math.floor(Math.random() * data.events.length)]
 
 
   return (
     <div className="App">
-
+      <Header />
+      <div className="container">
       <Poll
       sport={event.sport}
       name={event.name}
       awayName={event.awayName}
-      homeName={event.homeName} />
-   
+      homeName={event.homeName}
+      country={event.country}
+      group={event.group}
+      state={event.state}/>
+      <Footer />
 
-
+   </div>
     </div>
   );
 }
