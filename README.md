@@ -5,7 +5,7 @@ This application allows the user to vote on who will a given sport event. The ev
 
 ### How to run it.
 
-You can the find the app deployed on [https://text-commenter.herokuapp.com/](https://text-commenter.herokuapp.com/).
+You can the find the app deployed on [https://react-sports-poll.herokuapp.com/](https://react-sports-poll.herokuapp.com/).
 
 In case you want to run it locally here is how you can do it: 
 
@@ -29,9 +29,6 @@ In case you want to run it locally here is how you can do it:
 In order to make this application more usable several improvements must be implemented.
 
 1. Implement a method that would store the input user data, in order for them to be used to provide accurate odds and statistical data.
-2. In order to personalize the application user accounts with authentication should be implemented as well as a database that will allow for multiple texts that the user can save and load on request.
-3. Several css improvements in order to make the application more pleasing to the eye.
+2. Implement a method that would fetch the json file from somewhere over the internet. 
+3. Several css improvements in order to make the application responsive and in general more pleasing to the eye.
 
-### Known Issues
-
-..* The program can't handle marked inputs which text from more than one elements.
