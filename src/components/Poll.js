@@ -19,6 +19,15 @@ const Poll = ({sport , name , awayName , homeName, country, group, state}) => {
         }
 
     }
+
+    function generateRandomNumber() {
+        var min = 1.1,
+            max = 3.65,
+            randomNumber = (Math.random() * (max - min) + min).toFixed(2);
+    
+        return randomNumber;
+    };
+    
     return(
         
         <div className="poll">
@@ -38,9 +47,9 @@ const Poll = ({sport , name , awayName , homeName, country, group, state}) => {
             <div className="container">
             <form>
                 <div class="radio-group">
-                <input type="radio" id="option-one" name="selector"/><label for="option-one">{homeName}</label>
-                <input type="radio" id="option-two" name="selector"/><label for="option-two">Draw</label>
-                <input type="radio" id="option-three" name="selector"/><label for="option-three">{awayName}</label>
+                <input type="radio" id="option-one" name="selector"/><label for="option-one">{homeName} - {generateRandomNumber()}</label>
+                <input type="radio" id="option-two" name="selector"/><label for="option-two">Draw  - {generateRandomNumber()}</label>
+                <input type="radio" id="option-three" name="selector"/><label for="option-three">{awayName} - {generateRandomNumber()}</label>
                 </div>
             </form>
             </div>
