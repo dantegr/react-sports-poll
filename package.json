@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "flag-icon-css": "^3.3.0",
-    "http-proxy-middleware": "^0.19.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
