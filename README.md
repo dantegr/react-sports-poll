@@ -5,7 +5,7 @@ This application allows the user to vote on who will a given sport event. The ev
 
 ### How to run it.
 
-You can the find the app deployed on [https://react-sports-poll.herokuapp.com/](https://react-sports-poll.herokuapp.com/).
+You can the find the app deployed on [https://react-sports-poll.dantegr.now.sh/](https://react-sports-poll.dantegr.now.sh/).
 
 In case you want to run it locally here is how you can do it: 
 
