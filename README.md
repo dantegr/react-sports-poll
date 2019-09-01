@@ -19,10 +19,10 @@ In case you want to run it locally here is how you can do it:
 
 ### Build with
 
-..* React - Javascript framework.
-..* SASS- CSS pre-processor that allows for extra functionality between css files.
-..* flag-icon-css - CSS package tha offers several country flags to use.
-..* Node.js - used to build and provide server status.
+* React - Javascript framework.
+* SASS- CSS pre-processor that allows for extra functionality between css files.
+* flag-icon-css - CSS package tha offers several country flags to use.
+* Node.js - used to build and provide server status.
 
 ### Improvements
 
