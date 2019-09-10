@@ -1,7 +1,7 @@
 ## Sports Poll
 
 ### Usage
-This application allows the user to vote on who will a given sport event. The event data are drawn from the given .json file, and are randomly rendered one at a time by the app. The user  can pick the winner of the event or draw, by clicking one of the three given options below . After that the user can click the next event button so that the app can load it and render it to the screen. 
+This application allows the user to vote on who will a given sport event. The event data are drawn from a random .json file, and are randomly rendered one at a time by the app. The user  can pick the winner of the event or draw, by clicking one of the three given options below . After that the user can click the next event button so that the app can load it and render it to the screen. 
 
 ### How to run it.
 
